@@ -1,1 +1,21 @@
-/Users/alelouis/.config/skhd/skhdrc
+# meh = alt + shift + ctrl
+# hyper = meh + cmd
+
+# focus management
+meh - l : yabai -m window --focus east
+meh - j : yabai -m window --focus west
+meh - i : yabai -m window --focus north
+meh - k : yabai -m window --focus south
+
+# window layout
+hyper - b : yabai -m space --layout bsp
+hyper - f : yabai -m space --layout float
+
+# window management
+hyper - r : yabai -m space --rotate 90
+hyper - l : yabai -m window --swap east
+hyper - j : yabai -m window --swap west
+hyper - i : yabai -m window --swap north
+hyper - k : yabai -m window --swap south
+
+
