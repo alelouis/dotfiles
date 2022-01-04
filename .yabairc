@@ -13,3 +13,4 @@ yabai -m rule --add app="^Signal$" manage=off
 yabai -m rule --add app="^Messenger$" manage=off
 yabai -m rule --add app="^VLC$" manage=off
 yabai -m rule --add app="^SYSTM$" manage=off
+yabai -m rule --add app="^Aseprite$" manage=off
