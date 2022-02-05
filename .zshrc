@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias le="exa -all"
 alias cg="cargo run"
-
+alias vim="nvim"
 export PATH="$HOME/.poetry/bin:$PATH"
 
 # >>> conda initialize >>>
