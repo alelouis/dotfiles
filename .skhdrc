@@ -18,4 +18,6 @@ hyper - j : yabai -m window --swap west
 hyper - i : yabai -m window --swap north
 hyper - k : yabai -m window --swap south
 
-
+# space management
+ctrl - right : yabai -m space --focus next
+ctrl - left : yabai -m space --focus prev

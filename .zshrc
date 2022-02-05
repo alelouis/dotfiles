@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias le="exa -all"
-
+alias cg="cargo run"
 
 export PATH="$HOME/.poetry/bin:$PATH"
 
