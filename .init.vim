@@ -18,8 +18,10 @@ set termguicolors
 highlight clear SignColumn
 
 call plug#begin('~/.config/nvim/autoload/plugged')
-Plug 'timonv/vim-cargo'
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'projekt0n/github-nvim-theme'
+Plug 'rust-lang/rust.vim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -36,7 +38,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 call plug#end()
 
-let g:github_function_style = "italic"
+let g:github_function_style = "NONE"
 let g:github_sidebars = ["qf", "vista_kind", "terminal", "packer"]
 let g:github_transparent = "true"
 " Change the "hint" color to the "orange" color, and make the "error" color bright red
@@ -52,13 +54,13 @@ let mapleader=" "
 inoremap jk <Esc>
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>g <cmd>Telescope live_grep<cr>
+nnoremap <leader>b <cmd>Telescope buffers<cr>
+nnoremap <leader>h <cmd>Telescope help_tags<cr>
 nnoremap <leader>fof <cmd>Telescope oldfiles<cr>
 nnoremap <leader>ca <cmd>Telescope lsp_code_actions<cr>
-nnoremap <leader>r <cmd>CargoRun<cr>
-nnoremap <leader>t <cmd>CargoTest<cr>
+nnoremap <leader>r <cmd>Crun<cr>
+nnoremap <leader>t <cmd>Ctest<cr>
 
 lua <<EOF
 local nvim_lsp = require'lspconfig'
@@ -132,3 +134,14 @@ cmp.setup({
   },
 })
 EOF
+
+
+lua << END
+require('lualine').setup {
+    options = { 
+        theme = 'ayu_mirage',
+        section_separators = '', 
+        component_separators = ''
+        }
+    }
+END
