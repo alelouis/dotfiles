@@ -14,9 +14,13 @@ return require('packer').startup(function()
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }   
     }
- 
+    -- vim-just
+    use 'NoahTheDuke/vim-just'
+
     -- colorscheme
     use 'bluz71/vim-moonfly-colors'
+
+    -- tree-sitter
     use 'nvim-treesitter/nvim-treesitter'
 
     -- telescope
