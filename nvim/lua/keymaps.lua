@@ -22,7 +22,15 @@ api.nvim_set_keymap("n", "<Leader>gd", [[<cmd>lua require('telescope.builtin').l
 api.nvim_set_keymap("n", "<Leader>gr", [[<cmd>lua require('telescope.builtin').lsp_references()<cr>]], { noremap = true })
 api.nvim_set_keymap("n", "<Leader>d", [[<cmd>lua require('telescope.builtin').diagnostics()<cr>]], { noremap = true })
 
--- rust 
-api.nvim_set_keymap("n", "Leader<r>", [[<cmd>Crun<cr>]], { noremap = true })
-api.nvim_set_keymap("n", "Leader<t>", [[<cmd>Ctest<cr>]], { noremap = true })
+-- Code running 
+-- api.nvim_set_keymap("n", "Leader<r>", [[<cmd>Crun<cr>]], { noremap = true })
+-- api.nvim_set_keymap("n", "Leader<t>", [[<cmd>Ctest<cr>]], { noremap = true })
+-- api.nvim_set_keymap("n", "<Leader>r", ":split | terminal gcc *.c -o run && ./run<cr>", { noremap = true, silent = true})
+
+-- Fast keymaps
+api.nvim_set_keymap("n", "<Leader>s", ":w<cr>", { noremap = true})
+api.nvim_set_keymap("n", "<Leader>q", ":q<cr>", { noremap = true})
+api.nvim_set_keymap("n", "<Leader>qq", ":q!<cr>", { noremap = true})
+api.nvim_set_keymap("n", "<Leader>sq", ":wq<cr>", { noremap = true})
+
 
