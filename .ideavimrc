@@ -1,0 +1,19 @@
+let mapleader=" "
+
+set relativenumber
+set number
+set nu
+set scrolloff=8
+set showmode
+set ideajoin
+
+inoremap jk <Esc>
+xnoremap jk <Esc>
+
+nnoremap J :action MoveLineDown<CR>
+nnoremap K :action MoveLineUp<CR>
+vnoremap J :action MoveLineDown<CR>
+vnoremap K :action MoveLineUp<CR>
+
+nnoremap <Leader>r :action Run<CR>
+nnoremap <Leader>f :action GotoFile<CR>
