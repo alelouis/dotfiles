@@ -21,6 +21,8 @@ hyper - k : yabai -m window --swap south
 # space management
 ctrl - right : yabai -m space --focus next
 ctrl - left : yabai -m space --focus prev
+ctrl - end : yabai -m window --space next; yabai -m space --focus next
+ctrl - home : yabai -m window --space prev; yabai -m space --focus prev
 
 # cheatsheet
 hyper - h : qlmanage -p /Users/alelouis/Cheatsheet/keyboard/layer0.png & qlmanage -p /Users/alelouis/Cheatsheet/keyboard/layer1.png
