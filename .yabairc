@@ -23,3 +23,9 @@ yabai -m rule --add app="^Préférences Système$" manage=off
 yabai -m rule --add app="^Wally$" manage=off
 yabai -m rule --add app="^OpenEmu$" manage=off
 yabai -m rule --add app="^Notion$" manage=off
+yabai -m rule --add app="^League of Legends$" manage=off
+yabai -m rule --add app="^dev$" manage=off
+yabai -m rule --add app="^perlin-verlet$" manage=off
+yabai -m rule --add app="^Logs$" manage=off
+yabai -m rule --add app="^QuadCopter$" manage=off
+yabai -m rule --add app="^Blob$" manage=off
